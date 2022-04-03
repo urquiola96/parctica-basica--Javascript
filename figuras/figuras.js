@@ -20,6 +20,35 @@ function areaTriangulo(base, altura) {
     return base*altura;   
 }
 console.groupEnd()
+ 
+function validar(lado1, lado2, base) {
+    let ladost = 0;
+    let tipoT = "error";
+    let altura = Math.sqrt(Math.pow(lado1 , 2) + Math.pow(base , 2));
+
+    if (lado1==lado2) {
+        ladost++
+    }
+    if (lado1 == base) {
+       ladost++ 
+    }
+    if (lado2 == base) {
+        ladost++ 
+     }
+     
+     if (ladost==0) {
+         tipoT="escaleno";
+         
+     } else if (ladost==1) {
+        tipoT="isoseles";
+        
+    }
+    else if (ladost>=2) {
+        tipoT="equilatero";  
+    }
+    console.log("es un tirgulo " + tipoT + " con una altura de " +altura);
+}
+
 //circulo
 console.group("circulo")
 const pi = Math.PI;
