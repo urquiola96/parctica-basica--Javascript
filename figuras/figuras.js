@@ -62,7 +62,7 @@ function areaCirculo(radio) {
 }
 console.groupEnd()
 
-//acttiones cuadrado
+//acciones cuadrado
 function perimetroCua() {
     const input = document.getElementById("ladoC")
     const lado = input.value;
