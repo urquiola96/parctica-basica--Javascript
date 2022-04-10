@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promedio, Moda y Mediana</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Calcula  Promedios, Modas y Medianas.
+          </h1>
+          <p>Este es el tercer taller del Curso Práctico de JavaScript.</p>
+    </header>
+    
+    <main>    
+        <section>
+            <h2>Calcula el promedio de una serie de numeros</h2>
+            <form>
+                <label for="cadenaP">escribe tus serie de numeros separados por espacios</label>
+                <input type="text"id="cadenaP">
+
+                <button type="button" onclick="calcularPromedio()">Calcular el promedio</button>
+                <button type="button" onclick="calcularMediana()">Calcular la mediana</button>
+                <button type="button" onclick="calcularModa()">Calcular la moda</button>
+            </form>
+
+            <p id="promedioT"></p>
+            <p id="medianaT"></p>
+            <p id="modaT"></p>
+            
+        </section>
+    </main>
+
+    <script src="/promedio-moda-mediana/promedio-moda-mediana.js"></script>
+</body>
+</html>
