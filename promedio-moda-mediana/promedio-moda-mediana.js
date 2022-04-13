@@ -8,14 +8,7 @@ function extraerArray(){
 
     let cadenat = entrada.split(" ");
     
-    
-    cadenat.forEach(element => {
-        let num = parseInt(element);
-        numeros.push(num);
-    });
-
-    numeros.sort( (a,b) => a - b );
-    return numeros
+    return numeros = cadenat.map( numero => parseFloat(numero) );
 }
 
 
